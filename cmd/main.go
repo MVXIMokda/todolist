@@ -1,7 +1,7 @@
 package main
 
 import (
-	todo_app "github.com/MVXIMokda/todolist"
+	"github.com/MVXIMokda/todolist"
 	"github.com/MVXIMokda/todolist/pkg/handler"
 	"github.com/MVXIMokda/todolist/pkg/repository"
 	"github.com/MVXIMokda/todolist/pkg/service"

@@ -1,7 +1,7 @@
 package repository
 
 import (
-	todo_app "github.com/MVXIMokda/todolist"
+	"github.com/MVXIMokda/todolist"
 	"github.com/jmoiron/sqlx"
 )
 

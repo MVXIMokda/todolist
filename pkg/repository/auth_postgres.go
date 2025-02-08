@@ -2,7 +2,7 @@ package repository
 
 import (
 	"fmt"
-	todo_app "github.com/MVXIMokda/todolist"
+	"github.com/MVXIMokda/todolist"
 	"github.com/jmoiron/sqlx"
 )
 

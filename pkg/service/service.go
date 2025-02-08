@@ -1,8 +1,8 @@
 package service
 
 import (
-	todo_app "github.com/MVXIMokda/todolist"
-	repository "github.com/MVXIMokda/todolist/pkg/repository"
+	"github.com/MVXIMokda/todolist"
+	"github.com/MVXIMokda/todolist/pkg/repository"
 )
 
 type Authorization interface {
