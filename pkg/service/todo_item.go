@@ -1,7 +1,7 @@
 package service
 
 import (
-	todo_app "github.com/MVXIMokda/todolist"
+	"github.com/MVXIMokda/todolist"
 	"github.com/MVXIMokda/todolist/pkg/repository"
 )
 

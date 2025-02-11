@@ -20,7 +20,7 @@ func (r *TodoItemPostgres) Create(listId int, item todo_app.TodoItem) (int, erro
 		return 0, err
 	}
 	var itemId int
-	createItemQuery := fmt.Sprintf("INSERT INTO %s (tittle, description) VALUES ($1, $2) RETURNING id", todoItemsTable)
+	createItemQuery := fmt.Sprintf("INSERT INTO %s (title, description) VALUES ($1, $2) RETURNING id", todoItemsTable)
 
 	row := tx.QueryRow(createItemQuery, item.Title, item.Description)
 	err = row.Scan(&itemId)

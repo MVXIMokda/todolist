@@ -7,7 +7,7 @@ CREATE TABLE users (
 
 CREATE TABLE todo_lists (
                             id SERIAL NOT NULL UNIQUE,
-                            tittle VARCHAR(100) NOT NULL,
+                            title VARCHAR(100) NOT NULL,
                             description VARCHAR(255)
 );
 
@@ -19,13 +19,13 @@ CREATE TABLE users_lists (
 
 CREATE TABLE todo_items (
                             id SERIAL NOT NULL UNIQUE,
-                            tittle VARCHAR(255) NOT NULL,
+                            title VARCHAR(255) NOT NULL,
                             description VARCHAR(255),
                             done BOOLEAN NOT NULL DEFAULT FALSE
 );
 
 CREATE TABLE lists_items (
                              id SERIAL NOT NULL UNIQUE,
-                             item_id INT REFERENCES users(id) ON DELETE CASCADE NOT NULL,
-                             list_id INT REFERENCES todo_items(id) ON DELETE CASCADE NOT NULL
+                             item_id INT REFERENCES todo_items(id) ON DELETE CASCADE NOT NULL,
+                             list_id INT REFERENCES todo_lists(id) ON DELETE CASCADE NOT NULL
 );

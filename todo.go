@@ -4,7 +4,7 @@ import "errors"
 
 type Todolist struct {
 	Id          int    `json:"id" db:"id"`
-	Title       string `json:"tittle" db:"tittle" binding:"required"`
+	Title       string `json:"title" db:"title" binding:"required"`
 	Description string `json:"description" db:"description"`
 }
 
@@ -28,7 +28,7 @@ type ListItem struct {
 }
 
 type UpdateListInput struct {
-	Title       *string `json:"tittle"`
+	Title       *string `json:"title"`
 	Description *string `json:"description"`
 }
 
