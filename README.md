@@ -22,10 +22,12 @@
 
 ### How to use:
 While in the project directory:
->docker-compose up --build todo-app
+
+`docker-compose up --build todo-app`
 
 For SQL-migrations
->migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5435/postgres?sslmode=disable' up
+
+`migrate -path ./schema -database 'postgres://postgres:qwerty@localhost:5435/postgres?sslmode=disable' up`
 
 Use an HTTP client to test your application, for example: Postman
 
