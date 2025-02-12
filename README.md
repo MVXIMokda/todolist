@@ -16,7 +16,7 @@
 
 - PostgreSQL with lib/sqlx
 - Framework Gin
-- Implementation sign-up, sign-up, JWT.
+- Implementation sign-up, sign-in, JWT.
 - Launch docker, writing docker file, docker-compose
 - Was also used spf13/viper
 
